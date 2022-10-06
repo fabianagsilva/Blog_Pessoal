@@ -1,11 +1,13 @@
 package com.gerenation.blogpessoal.model;
 
 import java.time.LocalDateTime;
+
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 
 import org.hibernate.annotations.UpdateTimestamp;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
  * @author Fabiana
@@ -29,6 +31,10 @@ public class Postagem {
 
 	@UpdateTimestamp
 	public static LocalDateTime data;
+
+	@ManyToOne
+	@JsonIgnoreProperties("postagem")
+	private Tema tema;
 
 	public Long getId() {
 		return id;
@@ -60,6 +66,14 @@ public class Postagem {
 
 	public static void setData(LocalDateTime data) {
 		Postagem.data = data;
+	}
+
+	public Tema getTema() {
+		return tema;
+	}
+
+	public void setTema(Tema tema) {
+		this.tema = tema;
 	}
 
 }
