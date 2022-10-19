@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
  * @author Fabiana
- * @version 2.0
+ * @version 3.0
  */
 @Entity
 @Table(name = "tb_usuarios")
@@ -35,6 +35,20 @@ public class Usuario {
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem> postagem;
 
+	// Construtor com parametros
+	public Usuario(Long id, String nome, String foto, String usuario, String senha) {
+		this.id = id;
+		this.nome = nome;
+		this.foto = foto;
+		this.usuario = usuario;
+		this.senha = senha;
+	}
+
+	// Construtor vazio
+	public Usuario() {
+	}
+
+	// Getters e Setters
 	public Long getId() {
 		return id;
 	}
