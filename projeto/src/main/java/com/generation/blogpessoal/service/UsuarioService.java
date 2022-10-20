@@ -1,4 +1,4 @@
-package com.gerenation.blogpessoal.service;
+package com.generation.blogpessoal.service;
 
 import java.nio.charset.Charset;
 import java.util.Optional;
@@ -10,9 +10,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.gerenation.blogpessoal.model.Usuario;
-import com.gerenation.blogpessoal.model.UsuarioLogin;
-import com.gerenation.blogpessoal.repository.UsuarioRepository;
+import com.generation.blogpessoal.model.Usuario;
+import com.generation.blogpessoal.model.UsuarioLogin;
+import com.generation.blogpessoal.repository.UsuarioRepository;
 
 /**
  * @author Fabiana

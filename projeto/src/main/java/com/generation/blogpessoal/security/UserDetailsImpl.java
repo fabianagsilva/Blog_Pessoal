@@ -1,10 +1,11 @@
-package com.gerenation.blogpessoal.security;
+package com.generation.blogpessoal.security;
 
 import java.util.Collection;
 import java.util.List;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import com.gerenation.blogpessoal.model.Usuario;
+
+import com.generation.blogpessoal.model.Usuario;
 
 /**
  * @author Fabiana

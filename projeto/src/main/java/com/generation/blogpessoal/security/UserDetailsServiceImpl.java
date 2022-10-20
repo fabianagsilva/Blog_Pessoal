@@ -1,11 +1,12 @@
-package com.gerenation.blogpessoal.security;
+package com.generation.blogpessoal.security;
 
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.*;
 import org.springframework.stereotype.Service;
-import com.gerenation.blogpessoal.model.Usuario;
-import com.gerenation.blogpessoal.repository.UsuarioRepository;
+
+import com.generation.blogpessoal.model.Usuario;
+import com.generation.blogpessoal.repository.UsuarioRepository;
 
 /**
  * @author Fabiana

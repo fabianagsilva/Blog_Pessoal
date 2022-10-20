@@ -1,4 +1,4 @@
-package com.gerenation.blogpessoal.controller;
+package com.generation.blogpessoal.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,8 +11,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.gerenation.blogpessoal.model.Postagem;
-import com.gerenation.blogpessoal.repository.PostagemRespository;
+import com.generation.blogpessoal.model.Postagem;
+import com.generation.blogpessoal.repository.PostagemRespository;
 
 /**
  * @author Fabiana

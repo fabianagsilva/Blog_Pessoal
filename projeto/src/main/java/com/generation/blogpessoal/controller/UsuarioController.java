@@ -1,4 +1,4 @@
-package com.gerenation.blogpessoal.controller;
+package com.generation.blogpessoal.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,10 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import com.gerenation.blogpessoal.model.Usuario;
-import com.gerenation.blogpessoal.model.UsuarioLogin;
-import com.gerenation.blogpessoal.repository.UsuarioRepository;
-import com.gerenation.blogpessoal.service.UsuarioService;
+
+import com.generation.blogpessoal.model.Usuario;
+import com.generation.blogpessoal.model.UsuarioLogin;
+import com.generation.blogpessoal.repository.UsuarioRepository;
+import com.generation.blogpessoal.service.UsuarioService;
 
 /**
  * @author Fabiana
